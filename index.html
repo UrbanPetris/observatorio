@@ -165,6 +165,7 @@
             </div>
         </section>
         <!-- Novedades -->
+        <!-- Completar modal con  -->
         <section>
             <div class="container">
                 <div class="row">
@@ -177,17 +178,57 @@
                         </p>
                     </div>
                     <div class="col-md-5 col-sm-12 my-auto">
-                        <a data-toggle="modal" class="modal--bodylink" data-target="#myModal"><img src="img/chocon3.jpg"
-                                class="rounded float-md-right" alt="Represa Chocón" title="Represa Chocón"></a>
-
-                        <div class="modal fade" id="myModal">
-                            <div class="modal-dialog modal-xl modal-dialog-centered justify-content-center">
-                                <div class="modal-content">
-                                    <div class="modal-body">
-                                        <img src="img/chocon3.jpg" alt="Represa Chocón" title="Represa Chocón">
+                        <div id="carouselExampleControls2" class="carousel slide" data-ride="carousel">
+                            <div class="carousel-inner">
+                                <div class="carousel-item">
+                                    <!-- Comienza el modal de la foto de la primera novedad -->
+                                    <a data-toggle="modal" class="modal--bodylink" data-target="#myModal"><img
+                                            src="img/chocon3.jpg" class="rounded float-md-right" alt="Represa Chocón"
+                                            title="Represa Chocón"></a>
+                                    <div class="modal fade" id="myModal">
+                                        <div class="modal-dialog modal-xl modal-dialog-centered justify-content-center">
+                                            <div class="modal-content">
+                                                <div class="modal-body">
+                                                    <img src="img/chocon3.jpg" alt="Represa Chocón"
+                                                        title="Represa Chocón">
+                                                </div>
+                                                <div class="modal-footer">
+                                                    <p>Novedad sobre la Represa Chocón</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Comienza el modal de la foto de la segunda novedad -->
+                                <div class="carousel-item">
+                                    <a data-toggle="modal" class="modal--bodylink" data-target="#myModal2"><img
+                                            src="img/chocon2.jpg" class="rounded float-md-right" alt="Represa Chocón"
+                                            title="Represa Chocón"></a>
+                                    <div class="modal fade" id="myModal2">
+                                        <div class="modal-dialog modal-xl modal-dialog-centered justify-content-center">
+                                            <div class="modal-content">
+                                                <div class="modal-body">
+                                                    <img src="img/chocon2.jpg" alt="Represa Chocón"
+                                                        title="Represa Chocón">
+                                                </div>
+                                                <div class="modal-footer">
+                                                    <p>Novedad sobre la Represa Chocón</p>
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
+                            <a class="carousel-control-prev" href="#carouselExampleControls2" role="button"
+                                data-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Previous</span>
+                            </a>
+                            <a class="carousel-control-next" href="#carouselExampleControls2" role="button"
+                                data-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Next</span>
+                            </a>
                         </div>
                     </div>
                 </div>
