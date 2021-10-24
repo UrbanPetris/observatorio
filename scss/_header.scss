@@ -1,0 +1,20 @@
+header {
+  background-color: #333333;
+  box-shadow: 0px 10px 8px -6px rgba(0, 0, 0, 0.5);
+}
+
+nav ul li a {
+  color: white !important;
+  transition: all $transition !important;
+  &:hover {
+    color: $color_hover !important;
+  }
+}
+
+.navbar-toggler {
+  border-color: white !important;
+}
+
+.fa-bars {
+  color: white;
+}

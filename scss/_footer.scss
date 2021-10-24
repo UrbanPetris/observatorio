@@ -1,0 +1,38 @@
+footer {
+  background-image: linear-gradient($color_footer_uno, $color_footer_dos);
+}
+
+.footer__contacto {
+  color: $color_footer_links;
+  font-weight: 700;
+  a {
+    text-decoration: none;
+    color: #1d64fd;
+    transition: all $transition;
+    &:hover {
+      color: $color_footer_hover;
+    }
+  }
+}
+
+.footer__copyright {
+  font-weight: 700;
+  a {
+    color: $color_footer_links;
+    text-decoration: none;
+    transition: all $transition;
+    &:hover {
+      color: $color_footer_hover;
+    }
+  }
+}
+
+.footer__redes ul li {
+  display: inline-block;
+  a {
+    color: $color_footer_links;
+    font-size: 1rem;
+    list-style: none;
+    text-align: center;
+  }
+}

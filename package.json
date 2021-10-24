@@ -1,12 +1,15 @@
 {
   "name": "root",
   "version": "1.0.0",
-  "description": "curso_desarrollo_web",
+  "description": "Sitio web de Observatorio de Obras. Práctica del curso Desarrollo Web de Coderhouse",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "compile:sass":  "sass --watch scss:css"
+    "compile:sass": "sass --watch scss:css"
   },
   "author": "Pablo Depetris Chauvin",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap": "^4.6.0"
+  }
 }

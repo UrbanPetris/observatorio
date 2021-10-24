@@ -1,0 +1,94 @@
+.modal--bodylink {
+  cursor: pointer;
+}
+
+.carousel .carousel-control-next,
+.carousel .carousel-control-prev {
+  visibility: hidden;
+}
+
+.carousel:hover .carousel-control-next,
+.carousel:hover .carousel-control-prev {
+  visibility: visible;
+}
+
+.modal-content {
+  width: auto !important;
+  align-items: center !important;
+}
+
+.modal-body {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.hero__text {
+  text-align: center;
+  color: white;
+}
+
+// falta darle opacidad sólo a la imagen
+@each $hero_pagina, $url in $url_heroes {
+  .hero__image--#{$hero_pagina} {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+      url($url);
+    background-size: cover;
+  }
+}
+
+@each $redes, $color in $color_redes {
+  @if $redes != "instagram" {
+    .boton__redes--#{$redes} {
+      color: $color;
+      font-size: $redes_font-size;
+      transition: $transition;
+      &:hover {
+        transform: scale($redes_transform_scale);
+      }
+    }
+  } @else {
+    .boton__redes--#{$redes} {
+      font-size: $redes_font-size;
+      background: -webkit-linear-gradient($color);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      transition: $transition;
+      &:hover {
+        transform: scale($redes_transform_scale);
+      }
+    }
+  }
+}
+
+.geovisor__boton--selector {
+  height: 46px;
+  width: 100%;
+  background-color: $color_googlemapsiframe;
+  color: #fff;
+  border: none;
+  font-family: "Arial";
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  cursor: pointer;
+}
+
+.geovisor__boton--subirFichaObra {
+  display: none;
+  @media (max-width: 1200px) {
+    display: inline;
+    width: 40px;
+    height: 40px;
+    border-radius: 0% 50% 50% 0%;
+    background-color: $color_institucional_uno;
+    color: $color_institucional_dos;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 3px 5px -3px #333333;
+  }
+}

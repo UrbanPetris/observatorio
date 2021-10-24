@@ -1,0 +1,19 @@
+.direccion__mapa {
+  width: 100%;
+  //   max-width: 600px;
+  height: 400px;
+}
+
+.contacto__selector {
+  width: 100%;
+}
+
+.contacto__boton--enviar {
+  background-color: $color_institucional_uno;
+  color: white;
+}
+
+.contacto__boton--reset {
+  background-color: $color_institucional_dos;
+  color: white;
+}

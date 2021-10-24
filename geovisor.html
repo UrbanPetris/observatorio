@@ -91,6 +91,7 @@
     <main>
 
         <section>
+            <!-- Presentación -->
             <div class="container">
                 <div class="row">
                     <div class="col my-auto">
@@ -136,7 +137,7 @@
                 <div class="row">
                     <div class="col-xl-7">
                         <h2>Vista de los Proyectos</h2>
-                        <button id="selector_proyectos" class="boton__geovisor--selector">Dropdown Button group</button>
+                        <button id="selector_proyectos" class="geovisor__boton--selector">Dropdown Button group</button>
                         <iframe id="sv_geovisor"
                             src="https://www.google.com/maps/embed?pb=!4v1631045286052!6m8!1m7!1s2LTeEzoyJAGVq0Gc_js5rg!2m2!1d-39.27143606890586!2d-68.755907946786!3f7.9349580329594795!4f8.632904699168876!5f1.0088563183736903"
                             height="450" style="border: 0" allowfullscreen="" loading="lazy"></iframe>
@@ -148,10 +149,13 @@
                             height="600"></iframe>
                     </div>
                 </div>
-                <div id="geovisor__selectorProyectos">
-                    <a class="btn btn-primary" href="#">Prueba</a>
-                </div>
+            </div>
+
         </section>
+        <!-- botón para centrar la pantalla en la ficha que sólo aparece en dispositivos mobiles. Volverlo una solapa a la izquierda -->
+        <button class="geovisor__boton--subirFichaObra" id="geovisor__boton--subirFichaObra" type="button"><i
+                class="fas fa-chevron-up"></i></button>
+
 
     </main>
     <footer>
@@ -205,11 +209,15 @@
     </script>
 
     <script>
-        $('#geovisor__selectorProyectos').on('click', function (event) {
-            $('#geovisor__fichaObra').scrollIntoView()
-        })
-    </script>
+        document.getElementById("geovisor__boton--subirFichaObra").addEventListener("click", scroll_fichaObra);
 
+        function scroll_fichaObra() {
+            var element_FichaObra = document.getElementById("geovisor__fichaObra");
+            element_FichaObra.scrollIntoView({
+                block: "center"
+            })
+        }
+    </script>
 
 
 </body>
