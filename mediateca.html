@@ -31,21 +31,13 @@
 
     <!-- Mi CSS -->
     <link rel="stylesheet" href="css/style.css">
+    <!-- CSS Custom Scrollbar -->
     <link rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.min.css">
 
 
     <!-- Font Awesome -->
     <script src="https://kit.fontawesome.com/e7b2e375ab.js" crossorigin="anonymous"></script>
-    <!-- prueba -->
-    <!-- <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js"
-        integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ" crossorigin="anonymous">
-    </script>
-    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js"
-        integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY" crossorigin="anonymous">
-    </script> -->
-    <!-- prueba -->
-
 
     <!-- Animate.css -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
@@ -105,18 +97,17 @@
     <main>
 
         <!-- Sidebar Proyectos-->
-        <nav id="mediateca__sidebar">
-            <div class="mediateca__sidebar--header">
+        <nav id="sidebarProyectos">
+            <div class="sidebarProyectos__header">
                 <h3>Proyectos</h3>
-                <i title="Cerrar selector" class="fas fa-window-close mediateca__sidebar--cerrar"></i>
+                <i title="Cerrar selector" class="fas fa-window-close sidebarProyectos__cerrar"></i>
             </div>
-            <div class="mediateca__sidebar--selectorProyectos">
-                <!-- Corregir en base a la cantidad de Proyectos que se muestren finalmente -->
-                <a class="mediateca__sidebar--botonProyectos" href="#">Salto Grande</a>
-                <a class="mediateca__sidebar--botonProyectos" href="#">El Chocón</a>
-                <a class="mediateca__sidebar--botonProyectos" href="#">Punta Negra</a>
-                <a class="mediateca__sidebar--botonProyectos" href="#">San Roque</a>
-                <a class="mediateca__sidebar--botonProyectos" href="#">Cabra Corral</a>
+            <div class="sidebarProyectos__selectorProyectos">
+                <a class="sidebarProyectos__botonProyectos" href="#">Salto Grande</a>
+                <a class="sidebarProyectos__botonProyectos" href="#">El Chocón</a>
+                <a class="sidebarProyectos__botonProyectos" href="#">Punta Negra</a>
+                <a class="sidebarProyectos__botonProyectos" href="#">San Roque</a>
+                <a class="sidebarProyectos__botonProyectos" href="#">Cabra Corral</a>
             </div>
         </nav>
 
@@ -152,7 +143,7 @@
                 </div>
                 <div class="row">
                     <div class="col my-auto">
-                        <div id="carouselExampleControls" class="carousel slide" data-interval="false">
+                        <div id="carouselMediateca" class="carousel slide" data-interval="false">
                             <div class="carousel-inner">
                                 <!-- Proyecto 1 Salto Grande-->
                                 <div class="carousel-item active">
@@ -297,6 +288,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js"
         integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF" crossorigin="anonymous">
     </script>
+    <!-- mCustomScrollbar script -->
     <script
         src="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.concat.min.js">
     </script>
@@ -308,10 +300,10 @@
 
     <!-- carousel de Mediateca -->
     <script>
-        $('.mediateca__sidebar--selectorProyectos').on('click', 'a', function (event) {
+        $('.sidebarProyectos__selectorProyectos').on('click', 'a', function (event) {
             event.preventDefault();
             var target = $(this).index();
-            $('#carouselExampleControls').carousel(target);
+            $('#carouselMediateca').carousel(target);
         })
     </script>
 
@@ -327,16 +319,16 @@
     <script type="text/javascript">
         $(document).ready(function () {
             // agrega un scroll más minimalista y adaptable a mobile
-            $("#mediateca__sidebar").mCustomScrollbar({
+            $("#sidebarProyectos").mCustomScrollbar({
                 theme: "minimal"
             });
 
-            $('.mediateca__sidebar--cerrar').on('click', function () {
-                $('#mediateca__sidebar').removeClass('active');
+            $('.sidebarProyectos__cerrar').on('click', function () {
+                $('#sidebarProyectos').removeClass('active');
             });
 
             $('#mediateca__boton--selectorProyectos').on('click', function () {
-                $('#mediateca__sidebar').addClass('active');
+                $('#sidebarProyectos').addClass('active');
             });
         });
     </script>

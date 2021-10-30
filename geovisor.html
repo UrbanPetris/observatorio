@@ -33,6 +33,11 @@
     <!-- Mi CSS -->
     <link rel="stylesheet" href="css/style.css">
 
+    <!-- CSS Custom Scrollbar -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.min.css">
+
+
     <!-- Font Awesome -->
     <script src="https://kit.fontawesome.com/e7b2e375ab.js" crossorigin="anonymous"></script>
 
@@ -90,6 +95,21 @@
 
     <main>
 
+        <!-- Sidebar Proyectos-->
+        <nav id="sidebarProyectos">
+            <div class="sidebarProyectos__header">
+                <h3>Proyectos</h3>
+                <i title="Cerrar selector" class="fas fa-window-close sidebarProyectos__cerrar"></i>
+            </div>
+            <div class="sidebarProyectos__selectorProyectos">
+                <a class="sidebarProyectos__botonProyectos" href="#">Salto Grande</a>
+                <a class="sidebarProyectos__botonProyectos" href="#">El Chocón</a>
+                <a class="sidebarProyectos__botonProyectos" href="#">Punta Negra</a>
+                <a class="sidebarProyectos__botonProyectos" href="#">San Roque</a>
+                <a class="sidebarProyectos__botonProyectos" href="#">Cabra Corral</a>
+            </div>
+        </nav>
+
         <section>
             <!-- Presentación -->
             <div class="container">
@@ -137,10 +157,14 @@
                 <div class="row">
                     <div class="col-xl-7">
                         <h2>Vista de los Proyectos</h2>
-                        <button id="selector_proyectos" class="geovisor__boton--selector">Dropdown Button group</button>
+                        <!-- <button id="selector_proyectos" class="geovisor__boton--selector">Dropdown Button group</button> -->
+                        <button type="button" id="geovisor__boton--selectorProyectos" class="btn btn-info btn-block">
+                            <i class="fas fa-water"></i>
+                            <span>Seleccionar Proyectos</span>
+                        </button>
                         <iframe id="sv_geovisor"
                             src="https://www.google.com/maps/embed?pb=!4v1631045286052!6m8!1m7!1s2LTeEzoyJAGVq0Gc_js5rg!2m2!1d-39.27143606890586!2d-68.755907946786!3f7.9349580329594795!4f8.632904699168876!5f1.0088563183736903"
-                            height="450" style="border: 0" allowfullscreen="" loading="lazy"></iframe>
+                            height="450" style="border: 0;" allowfullscreen="" loading="lazy"></iframe>
                     </div>
                     <div class="col-xl-5">
                         <h2>Localización de Proyectos</h2>
@@ -204,10 +228,34 @@
         integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF" crossorigin="anonymous">
     </script>
 
+    <!-- mCustomScrollbar script -->
+    <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.concat.min.js">
+    </script>
+
     <script>
         AOS.init();
     </script>
 
+    <!-- sidebar -->
+    <script type="text/javascript">
+        $(document).ready(function () {
+            // agrega un scroll más minimalista y adaptable a mobile
+            $("#sidebarProyectos").mCustomScrollbar({
+                theme: "minimal"
+            });
+
+            $('.sidebarProyectos__cerrar').on('click', function () {
+                $('#sidebarProyectos').removeClass('active');
+            });
+
+            $('#geovisor__boton--selectorProyectos').on('click', function () {
+                $('#sidebarProyectos').addClass('active');
+            });
+        });
+    </script>
+
+    <!-- Botón mobile para subir a div de interés-->
     <script>
         document.getElementById("geovisor__boton--subirFichaObra").addEventListener("click", scroll_fichaObra);
 
@@ -218,7 +266,6 @@
             })
         }
     </script>
-
 
 </body>
 

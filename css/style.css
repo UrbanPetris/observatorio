@@ -289,7 +289,7 @@ table ul li {
   text-align: center;
 }
 
-#mediateca__sidebar {
+#sidebarProyectos {
   width: 250px;
   height: 300px;
   position: fixed;
@@ -302,16 +302,16 @@ table ul li {
   overflow-y: scroll;
   box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.2);
 }
-#mediateca__sidebar.active {
+#sidebarProyectos.active {
   right: 0;
 }
 @media (max-width: 768px) {
-  #mediateca__sidebar {
+  #sidebarProyectos {
     height: 200px;
   }
 }
 
-.mediateca__sidebar--header {
+.sidebarProyectos__header {
   padding: 0.7rem;
   background: #1d64fd;
   display: flex;
@@ -319,13 +319,13 @@ table ul li {
   justify-content: space-between;
 }
 
-.mediateca__sidebar--selectorProyectos {
+.sidebarProyectos__selectorProyectos {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-.mediateca__sidebar--botonProyectos {
+.sidebarProyectos__botonProyectos {
   background-color: #1d64fd;
   border: none;
   color: white;
@@ -339,13 +339,13 @@ table ul li {
   text-decoration: none;
   cursor: pointer;
 }
-.mediateca__sidebar--botonProyectos:hover, .mediateca__sidebar--botonProyectos:active {
+.sidebarProyectos__botonProyectos:hover, .sidebarProyectos__botonProyectos:active {
   background-color: rgba(30, 244, 215, 0.8);
   text-decoration: none;
   color: white;
 }
 
-.mediateca__sidebar--cerrar {
+.sidebarProyectos__cerrar {
   height: 0px;
   font-size: 2rem;
   background: #1d64fd;
@@ -356,7 +356,7 @@ table ul li {
   -o-transition: all 0.3s;
   transition: all 0.3s;
 }
-.mediateca__sidebar--cerrar:hover, .mediateca__sidebar--cerrar:active {
+.sidebarProyectos__cerrar:hover, .sidebarProyectos__cerrar:active {
   background: #fff;
   transform: scale(1.2);
   color: #1ef4d7;
