@@ -23,7 +23,7 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  align-items: center;
+  align-items: center !important;
 }
 
 .mediateca__sidebar--selectorProyectos {
@@ -69,11 +69,10 @@
   -webkit-transition: all 0.3s;
   -o-transition: all 0.3s;
   transition: all 0.3s;
-}
-
-.mediateca__sidebar--cerrar:hover {
-  background: #fff;
-  color: $color_institucional_uno;
+  &:hover {
+    background: #fff;
+    color: $color_institucional_uno;
+  }
 }
 
 figcaption h2 {

@@ -159,27 +159,27 @@ img {
 }
 
 .hero__image--home {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/chocon4.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.9)), url("../img/chocon4.jpg");
   background-size: cover;
 }
 
 .hero__image--contacto {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/hero-contact-us.png");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.9)), url("../img/hero-contact-us.png");
   background-size: cover;
 }
 
 .hero__image--estadisticas {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/financials_hero.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.9)), url("../img/financials_hero.jpg");
   background-size: cover;
 }
 
 .hero__image--mediateca {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/medialibrary_hero.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.9)), url("../img/medialibrary_hero.jpg");
   background-size: cover;
 }
 
 .hero__image--geovisor {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/geovisor_hero.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.9)), url("../img/geovisor_hero.jpg");
   background-size: cover;
 }
 
@@ -242,6 +242,23 @@ img {
   }
 }
 
+.mediateca__boton--subirSelectorProyectos {
+  display: none;
+}
+@media (max-width: 1200px) {
+  .mediateca__boton--subirSelectorProyectos {
+    display: inline;
+    width: 40px;
+    height: 40px;
+    border-radius: 0% 50% 50% 0%;
+    background-color: #1d64fd;
+    color: #978989;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 3px 5px -3px #333333;
+  }
+}
+
 .counter {
   color: goldenrod;
   font-size: 3rem;
@@ -279,7 +296,7 @@ table ul li {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  align-items: center;
+  align-items: center !important;
 }
 
 .mediateca__sidebar--selectorProyectos {
@@ -319,7 +336,6 @@ table ul li {
   -o-transition: all 0.3s;
   transition: all 0.3s;
 }
-
 .mediateca__sidebar--cerrar:hover {
   background: #fff;
   color: #1d64fd;
