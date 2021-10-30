@@ -245,7 +245,7 @@ img {
 .mediateca__boton--subirSelectorProyectos {
   display: none;
 }
-@media (max-width: 1200px) {
+@media (max-width: 1000px) {
   .mediateca__boton--subirSelectorProyectos {
     display: inline;
     width: 40px;
