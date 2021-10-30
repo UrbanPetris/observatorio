@@ -31,9 +31,21 @@
 
     <!-- Mi CSS -->
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.min.css">
+
 
     <!-- Font Awesome -->
     <script src="https://kit.fontawesome.com/e7b2e375ab.js" crossorigin="anonymous"></script>
+    <!-- prueba -->
+    <!-- <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js"
+        integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ" crossorigin="anonymous">
+    </script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js"
+        integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY" crossorigin="anonymous">
+    </script> -->
+    <!-- prueba -->
+
 
     <!-- Animate.css -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
@@ -91,6 +103,35 @@
     </header>
 
     <main>
+
+        <!-- Sidebar Proyectos-->
+        <nav id="mediateca__sidebar">
+            <div class="mediateca__sidebar--header">
+                <h3>Proyectos</h3>
+                <i class="fas fa-arrow-right mediateca__sidebar--cerrar"></i>
+            </div>
+            <div class="mediateca__sidebar--selectorProyectos">
+                <a class="mediateca__sidebar--botonProyectos" href="#">Proyecto 1</a>
+                <a class="mediateca__sidebar--botonProyectos" href="#">Proyecto 2</a>
+                <a class="mediateca__sidebar--botonProyectos" href="#">Proyecto 2</a>
+                <a class="mediateca__sidebar--botonProyectos" href="#">Proyecto 2</a>
+                <a class="mediateca__sidebar--botonProyectos" href="#">Proyecto 2</a>
+                <a class="mediateca__sidebar--botonProyectos" href="#">Proyecto 2</a>
+                <a class="mediateca__sidebar--botonProyectos" href="#">Proyecto 2</a>
+                <a class="mediateca__sidebar--botonProyectos" href="#">Proyecto 2</a>
+                <a class="mediateca__sidebar--botonProyectos" href="#">Proyecto 2</a>
+                <a class="mediateca__sidebar--botonProyectos" href="#">Proyecto 2</a>
+                <a class="mediateca__sidebar--botonProyectos" href="#">Proyecto 2</a>
+                <a class="mediateca__sidebar--botonProyectos" href="#">Proyecto 2</a>
+                <a class="mediateca__sidebar--botonProyectos" href="#">Proyecto 2</a>
+                <a class="mediateca__sidebar--botonProyectos" href="#">Proyecto 2</a>
+                <a class="mediateca__sidebar--botonProyectos" href="#">Proyecto 2</a>
+                <a class="mediateca__sidebar--botonProyectos" href="#">Proyecto 2</a>
+                <a class="mediateca__sidebar--botonProyectos" href="#">Proyecto 2</a>
+
+            </div>
+        </nav>
+
         <!-- Presentación -->
         <section>
             <div class="container">
@@ -110,15 +151,15 @@
                 </div>
             </div>
         </section>
+
         <section>
             <div class="container">
                 <div class="row">
                     <div class="col my-auto">
-                        <!-- Cambiar la botonera según la cantidad de proyectos. En mobile debe verse-->
-                        <div id="mediateca__selectorProyectos">
-                            <a class="btn btn-primary" href="#">Proyecto 1</a>
-                            <a class="btn btn-primary" href="#">Proyecto 2</a>
-                        </div>
+                        <button type="button" id="mediateca__boton--selectorProyectos" class="btn btn-info btn-block">
+                            <i class="fas fa-water"></i>
+                            <span>Seleccionar Proyectos</span>
+                        </button>
                     </div>
                 </div>
                 <div class="row">
@@ -203,6 +244,9 @@
             </div>
             </div>
         </section>
+        <!-- Botón mobile para subir a div de interés  -->
+        <button class="mediateca__boton--subirSelectorProyectos" id="mediateca__boton--subirSelectorProyectos"
+            type="button"><i class="fas fa-chevron-up"></i></button>
     </main>
 
     <footer>
@@ -250,23 +294,59 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js"
         integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF" crossorigin="anonymous">
     </script>
+    <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.concat.min.js">
+    </script>
+
 
     <script>
         AOS.init();
     </script>
 
+    <!-- carousel de Mediateca -->
     <script>
-        $('#mediateca__selectorProyectos').on('click', 'a', function (event) {
+        $('.mediateca__sidebar--selectorProyectos').on('click', 'a', function (event) {
             event.preventDefault();
             var target = $(this).index();
             $('#carouselExampleControls').carousel(target);
         })
     </script>
 
+    <!-- activar clase intense -->
     <script>
         window.onload = function () {
             var elements = document.querySelectorAll('.intense');
             Intense(elements);
+        }
+    </script>
+
+    <!-- sidebar -->
+    <script type="text/javascript">
+        $(document).ready(function () {
+            // $("#sidebar").mCustomScrollbar({
+            //     theme: "minimal"
+            // });
+
+            $('.mediateca__sidebar--cerrar').on('click', function () {
+                $('#mediateca__sidebar').removeClass('active');
+            });
+
+            $('#mediateca__boton--selectorProyectos').on('click', function () {
+                $('#mediateca__sidebar').addClass('active');
+            });
+        });
+    </script>
+
+    <!-- Botón mobile para subir a div de interés-->
+    <script>
+        document.getElementById("mediateca__boton--subirSelectorProyectos").addEventListener("click",
+            scroll_selectorProyectos);
+
+        function scroll_selectorProyectos() {
+            var element_FichaObra = document.getElementById("mediateca__boton--selectorProyectos");
+            element_FichaObra.scrollIntoView({
+                block: "center"
+            })
         }
     </script>
 

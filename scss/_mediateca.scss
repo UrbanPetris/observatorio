@@ -1,5 +1,81 @@
 //arreglar estilos de mediateca; utilizar operaciones SASS según idea final
 
+#mediateca__sidebar {
+  width: 250px;
+  height: 250px;
+  position: fixed;
+  top: 65px;
+  right: -250px;
+  z-index: 999;
+  background: transparentize($color: $color_institucional_uno, $amount: 0.2);
+  color: #fff;
+  transition: all 0.3s;
+  overflow-y: scroll;
+  box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.2);
+  &.active {
+    right: 0;
+  }
+}
+
+.mediateca__sidebar--header {
+  padding: 0.7rem;
+  background: $color_institucional_uno;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.mediateca__sidebar--selectorProyectos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.mediateca__sidebar--botonProyectos {
+  background-color: $color_institucional_uno;
+  border: none;
+  color: white;
+  padding: 0.5rem;
+  text-align: center;
+  font-size: 16px;
+  margin: 0.2rem;
+  transition: 0.3s;
+  display: block;
+  width: 100%;
+  text-decoration: none;
+  cursor: pointer;
+  &:hover,
+  &:active {
+    background-color: transparentize(
+      $color: $color_institucional_tres,
+      $amount: 0.5
+    );
+    text-decoration: none;
+    color: white;
+  }
+}
+
+.mediateca__sidebar--cerrar {
+  width: 35px;
+  height: 35px;
+  line-height: 35px;
+  text-align: center;
+  background: $color_institucional_uno;
+  // position: absolute;
+  // top: 10px;
+  // right: 10px;
+  cursor: pointer;
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.mediateca__sidebar--cerrar:hover {
+  background: #fff;
+  color: $color_institucional_uno;
+}
+
 figcaption h2 {
   color: $color_h2_caption;
   text-shadow: 1px 1px 5px black;

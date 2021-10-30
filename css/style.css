@@ -256,6 +256,75 @@ table ul li {
   text-align: center;
 }
 
+#mediateca__sidebar {
+  width: 250px;
+  height: 250px;
+  position: fixed;
+  top: 65px;
+  right: -250px;
+  z-index: 999;
+  background: rgba(29, 100, 253, 0.8);
+  color: #fff;
+  transition: all 0.3s;
+  overflow-y: scroll;
+  box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.2);
+}
+#mediateca__sidebar.active {
+  right: 0;
+}
+
+.mediateca__sidebar--header {
+  padding: 0.7rem;
+  background: #1d64fd;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.mediateca__sidebar--selectorProyectos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.mediateca__sidebar--botonProyectos {
+  background-color: #1d64fd;
+  border: none;
+  color: white;
+  padding: 0.5rem;
+  text-align: center;
+  font-size: 16px;
+  margin: 0.2rem;
+  transition: 0.3s;
+  display: block;
+  width: 100%;
+  text-decoration: none;
+  cursor: pointer;
+}
+.mediateca__sidebar--botonProyectos:hover, .mediateca__sidebar--botonProyectos:active {
+  background-color: rgba(30, 244, 215, 0.5);
+  text-decoration: none;
+  color: white;
+}
+
+.mediateca__sidebar--cerrar {
+  width: 35px;
+  height: 35px;
+  line-height: 35px;
+  text-align: center;
+  background: #1d64fd;
+  cursor: pointer;
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.mediateca__sidebar--cerrar:hover {
+  background: #fff;
+  color: #1d64fd;
+}
+
 figcaption h2 {
   color: white;
   text-shadow: 1px 1px 5px black;
