@@ -104,6 +104,11 @@ figcaption h2 {
     box-shadow: 2px 2px 6px 0px rgba(0, 0, 0, 0.3);
     max-width: 100%;
     max-height: 200px;
+    &:hover,
+    &:active {
+      opacity: 0.5;
+      cursor: pointer;
+    }
   }
 
   video {
@@ -111,6 +116,10 @@ figcaption h2 {
     border: 1px solid #ccc;
     box-shadow: 2px 2px 6px 0px rgba(0, 0, 0, 0.3);
     max-height: 200px;
+    &:hover,
+    &:active {
+      cursor: pointer;
+    }
   }
 }
 

@@ -374,11 +374,18 @@ figcaption h2 {
   max-width: 100%;
   max-height: 200px;
 }
+.col_mediateca_media img:hover, .col_mediateca_media img:active {
+  opacity: 0.5;
+  cursor: pointer;
+}
 .col_mediateca_media video {
   object-fit: cover;
   border: 1px solid #ccc;
   box-shadow: 2px 2px 6px 0px rgba(0, 0, 0, 0.3);
   max-height: 200px;
+}
+.col_mediateca_media video:hover, .col_mediateca_media video:active {
+  cursor: pointer;
 }
 
 .mediateca__media--1 {
