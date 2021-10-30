@@ -323,9 +323,10 @@
     <!-- sidebar -->
     <script type="text/javascript">
         $(document).ready(function () {
-            // $("#sidebar").mCustomScrollbar({
-            //     theme: "minimal"
-            // });
+            // agrega un scroll más minimalista y adaptable a mobile
+            $("#mediateca__sidebar").mCustomScrollbar({
+                theme: "minimal"
+            });
 
             $('.mediateca__sidebar--cerrar').on('click', function () {
                 $('#mediateca__sidebar').removeClass('active');
