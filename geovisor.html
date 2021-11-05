@@ -102,11 +102,11 @@
                 <i title="Cerrar selector" class="fas fa-window-close sidebarProyectos__cerrar"></i>
             </div>
             <div class="sidebarProyectos__selectorProyectos">
-                <a class="sidebarProyectos__botonProyectos" href="#">Salto Grande</a>
                 <a class="sidebarProyectos__botonProyectos" href="#">El Chocón</a>
+                <a class="sidebarProyectos__botonProyectos" href="#">Salto Grande</a>
                 <a class="sidebarProyectos__botonProyectos" href="#">Punta Negra</a>
                 <a class="sidebarProyectos__botonProyectos" href="#">San Roque</a>
-                <a class="sidebarProyectos__botonProyectos" href="#">Cabra Corral</a>
+                <a class="sidebarProyectos__botonProyectos" href="#">Agua del Toro</a>
             </div>
         </nav>
 
@@ -118,18 +118,15 @@
                         <div class="jumbotron jumbotron-fluid hero__image--geovisor">
                             <div class="container">
                                 <h1>Geovisor</h1>
-                                <p class="hero__text text-justify">Lorem ipsum dolor, sit amet consectetur adipisicing
-                                    elit.
-                                    Recusandae minima dolorum
-                                    repudiandae iusto
-                                    maxime
-                                    consectetur ullam enim. Voluptate sapiente modi amet natus culpa corrupti iure
-                                    dicta,
-                                    distinctio quidem
-                                    labore
-                                    pariatur sint asperiores suscipit aliquam, omnis qui eaque praesentium dolorem eius?
+                                <p class="hero__text text-justify">En esta página se presenta la ubicación geográfica de
+                                    los
+                                    aprovechamientso hidroeléctricos. A su vez se puede apreciar una vista <em>in
+                                        situ</em> 3D de
+                                    los
+                                    proyectos. Utilice el botón "Seleccionar Proyectos" para habilitar una barra desde
+                                    la cual se puede pasar de un proyecto a otro.
                                     En dispositivos móbiles se recomienda rotar la pantalla para una mejor visualización
-                                    del contenido</p>
+                                    del contenido.</p>
                             </div>
                         </div>
                     </div>
@@ -141,30 +138,114 @@
             <div class="container">
                 <div class="row">
                     <div class="col">
-                        <h2>Datos de los Proyectos</h2>
+                        <h2>Datos del Proyecto</h2>
                         <div id="geovisor__fichaObra">
-                            <p>
-                                DIV con alguna imagen y list items con datos de obras
-                            </p>
+                            <div id="carouselGeovisorFichaObra" class="carousel slide" data-interval="false">
+                                <div class="carousel-inner">
+                                    <!-- Proyecto 1 El Chocón-->
+                                    <div class="carousel-item active">
+                                        <div class="row align-items-center">
+                                            <div class="col-12 col-sm-7">
+                                                <img class="geovisor__fichaObra--imagen" src="/img/thumb/elchocon.jpg"
+                                                    title="La presa y vista panorámica aguas abajo"
+                                                    alt="La presa El chocón y vista panorámica aguas abajo">
+                                            </div>
+                                            <div class="col-12 col-sm-5 py-3 py-sm-0">
+                                                <li><strong>Nombre aprovechamiento:</strong> El Chocón</li>
+                                                <li><strong>Complejo:</strong> El Chocón</li>
+                                                <li><strong>Provincia:</strong> RÍO NEGRO - NEUQUÉN</li>
+                                                <li><strong>Cuenca:</strong> CUENCA DEL RIO LIMAY</li>
+                                                <li><strong>Río:</strong> Limay</li>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- Proyecto 2 Salto Grande-->
+                                    <div class="carousel-item">
+                                        <div class="row align-items-center">
+                                            <div class="col-12 col-sm-7">
+                                                <img class="geovisor__fichaObra--imagen"
+                                                    src="/img/thumb/saltogrande.jpg"
+                                                    alt="Vista general de la presa Salto Grande y sala de máquinas"
+                                                    title="Vista general de la presa y sala de máquinas">
+                                            </div>
+                                            <div class="col-12 col-sm-5 py-3 py-sm-0">
+                                                <li><strong>Nombre aprovechamiento:</strong> Salto Grande</li>
+                                                <li><strong>Provincia:</strong> ENTRE RÍOS</li>
+                                                <li><strong>Cuenca:</strong> CUENCA PROPIA DEL RIO URUGUAY EN ARGENTINA
+                                                </li>
+                                                <li><strong>Río:</strong> Uruguay</li>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- Proyecto 3 Punta Negra-->
+                                    <div class="carousel-item">
+                                        <div class="row align-items-center">
+                                            <div class="col-12 col-sm-7">
+                                                <img class="geovisor__fichaObra--imagen" src="/img/thumb/puntanegra.jpg"
+                                                    alt="Vista general de la presa Salto Grande y sala de máquinas"
+                                                    title="Vista general de la presa y sala de máquinas">
+                                            </div>
+                                            <div class="col-12 col-sm-5 py-3 py-sm-0">
+                                                <li><strong>Nombre aprovechamiento:</strong> Punta Negra</li>
+                                                <li><strong>Provincia:</strong> SAN JUAN</li>
+                                                <li><strong>Cuenca:</strong> CUENCA DEL RIO SAN JUAN</li>
+                                                <li><strong>Río:</strong> San Juan</li>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
         </section>
 
         <section>
             <div class="container">
                 <div class="row">
                     <div class="col-xl-7">
-                        <h2>Vista de los Proyectos</h2>
+                        <h2>Vista del Proyecto</h2>
                         <!-- <button id="selector_proyectos" class="geovisor__boton--selector">Dropdown Button group</button> -->
                         <button type="button" id="geovisor__boton--selectorProyectos" class="btn btn-info btn-block">
                             <i class="fas fa-water"></i>
                             <span>Seleccionar Proyectos</span>
                         </button>
-                        <iframe id="sv_geovisor"
-                            src="https://www.google.com/maps/embed?pb=!4v1631045286052!6m8!1m7!1s2LTeEzoyJAGVq0Gc_js5rg!2m2!1d-39.27143606890586!2d-68.755907946786!3f7.9349580329594795!4f8.632904699168876!5f1.0088563183736903"
-                            height="450" style="border: 0;" allowfullscreen="" loading="lazy"></iframe>
+                        <div id="carouselGeovisorStreetView" class="carousel slide" data-interval="false">
+                            <div class="carousel-inner">
+                                <!-- Proyecto 1 El Chocón-->
+                                <div class="carousel-item active">
+                                    <iframe
+                                        src="https://www.google.com/maps/embed?pb=!4v1631045286052!6m8!1m7!1s2LTeEzoyJAGVq0Gc_js5rg!2m2!1d-39.27143606890586!2d-68.755907946786!3f7.9349580329594795!4f8.632904699168876!5f1.0088563183736903"
+                                        height="450" style="border: 0;" allowfullscreen="" loading="lazy"></iframe>
+                                </div>
+                                <!-- Proyecto 2 Salto Grande-->
+                                <div class="carousel-item">
+                                    <iframe
+                                        src="https://www.google.com/maps/embed?pb=!4v1636119638819!6m8!1m7!1s1p4dP-cAP94jqsQwOhqjTg!2m2!1d-31.28068116833632!2d-57.92608803038478!3f299.3857595013265!4f-4.006181857366613!5f1.5795749111040154"
+                                        height="450" style="border: 0;" allowfullscreen="" loading="lazy">></iframe>
+                                </div>
+                                <!-- Proyecto 3 Punta Negra-->
+                                <div class="carousel-item">
+                                    <iframe
+                                        src="https://www.google.com/maps/embed?pb=!4v1636120511557!6m8!1m7!1s6o6WZBE5MGzzrh43JWDdWA!2m2!1d-31.51933285826963!2d-68.81785769904143!3f16.03735930708432!4f0!5f0.7820865974627469"
+                                        height="450" style="border: 0;" allowfullscreen="" loading="lazy"></iframe>
+                                </div>
+                                <!-- Proyecto 4 San Roque-->
+                                <div class="carousel-item">
+                                    <iframe
+                                        src="https://www.google.com/maps/embed?pb=!4v1636120700015!6m8!1m7!1sQKqLYxN-rPEfQ2cXS0yCJQ!2m2!1d-31.37359004681804!2d-64.4319849859651!3f259.569418141948!4f-0.4034629069851121!5f0.4000000000000002"
+                                        height="450" style="border: 0;" allowfullscreen="" loading="lazy"></iframe>
+                                </div>
+                                <!-- Proyecto 5 Agua del Toro-->
+
+                                <div class="carousel-item">
+
+                                    <iframe
+                                        src="https://www.google.com/maps/embed?pb=!4v1636121640117!6m8!1m7!1sI7jZuQbAx4VvFvYcRxTsdg!2m2!1d-34.58363205315732!2d-69.03616277511559!3f142.13149808196204!4f-11.09727235135928!5f0.4000000000000002"
+                                        height="450" style="border: 0;" allowfullscreen="" loading="lazy"></iframe>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                     <div class="col-xl-5">
                         <h2>Localización de Proyectos</h2>
@@ -235,6 +316,17 @@
 
     <script>
         AOS.init();
+    </script>
+
+    <!-- carousel de Geovisor -->
+    <script>
+        $('.sidebarProyectos__selectorProyectos').on('click', 'a', function (event) {
+            event.preventDefault();
+            var target = $(this).index();
+            $('#carouselGeovisorFichaObra').carousel(target);
+            $('#carouselGeovisorStreetView').carousel(target);
+
+        })
     </script>
 
     <!-- sidebar -->
