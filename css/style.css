@@ -212,83 +212,6 @@ img {
   transform: scale(0.9);
 }
 
-.geovisor__boton--selector {
-  height: 46px;
-  width: 100%;
-  background-color: #4d6a79;
-  color: #fff;
-  border: none;
-  font-family: "Arial";
-  font-size: 16px;
-  font-weight: 500;
-  line-height: 24px;
-  cursor: pointer;
-}
-
-.geovisor__boton--subirFichaObra {
-  display: none;
-}
-@media (max-width: 1200px) {
-  .geovisor__boton--subirFichaObra {
-    display: inline;
-    width: 40px;
-    height: 40px;
-    border-radius: 0% 50% 50% 0%;
-    background-color: #1d64fd;
-    color: #978989;
-    justify-content: center;
-    align-items: center;
-    box-shadow: 0px 3px 5px -3px #333333;
-    -webkit-transition: all 0.3s;
-    -o-transition: all 0.3s;
-    transition: all 0.3s;
-  }
-  .geovisor__boton--subirFichaObra:hover, .geovisor__boton--subirFichaObra:active {
-    background-color: #1ef4d7;
-    transform: scale(1.2);
-    color: white;
-  }
-}
-
-.mediateca__boton--subirSelectorProyectos {
-  display: none;
-}
-@media (max-width: 1000px) {
-  .mediateca__boton--subirSelectorProyectos {
-    display: inline;
-    width: 40px;
-    height: 40px;
-    border-radius: 0% 50% 50% 0%;
-    background-color: #1d64fd;
-    color: #978989;
-    justify-content: center;
-    align-items: center;
-    box-shadow: 0px 3px 5px -3px #333333;
-    -webkit-transition: all 0.3s;
-    -o-transition: all 0.3s;
-    transition: all 0.3s;
-  }
-  .mediateca__boton--subirSelectorProyectos:hover, .mediateca__boton--subirSelectorProyectos:active {
-    background-color: #1ef4d7;
-    transform: scale(1.2);
-    color: white;
-  }
-}
-
-.counter {
-  color: goldenrod;
-  font-size: 3rem;
-}
-
-table {
-  width: 100%;
-  margin-top: 1rem;
-}
-table ul li {
-  list-style: none;
-  text-align: center;
-}
-
 #sidebarProyectos {
   width: 250px;
   height: 300px;
@@ -362,6 +285,70 @@ table ul li {
   color: #1ef4d7;
 }
 
+.geovisor__boton--subirFichaObra {
+  display: none;
+}
+@media (max-width: 1200px) {
+  .geovisor__boton--subirFichaObra {
+    display: inline;
+    width: 40px;
+    height: 40px;
+    border-radius: 0% 50% 50% 0%;
+    background-color: #1d64fd;
+    color: #978989;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 3px 5px -3px #333333;
+    -webkit-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+  }
+  .geovisor__boton--subirFichaObra:hover, .geovisor__boton--subirFichaObra:active {
+    background-color: #1ef4d7;
+    transform: scale(1.2);
+    color: white;
+  }
+}
+
+.mediateca__boton--subirSelectorProyectos {
+  display: none;
+}
+@media (max-width: 1000px) {
+  .mediateca__boton--subirSelectorProyectos {
+    display: inline;
+    width: 40px;
+    height: 40px;
+    border-radius: 0% 50% 50% 0%;
+    background-color: #1d64fd;
+    color: #978989;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 3px 5px -3px #333333;
+    -webkit-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+  }
+  .mediateca__boton--subirSelectorProyectos:hover, .mediateca__boton--subirSelectorProyectos:active {
+    background-color: #1ef4d7;
+    transform: scale(1.2);
+    color: white;
+  }
+}
+
+.counter {
+  color: goldenrod;
+  font-size: 3rem;
+}
+
+table {
+  width: 100%;
+  margin-top: 1rem;
+}
+table ul li {
+  list-style: none;
+  text-align: center;
+}
+
 figcaption h2 {
   color: white;
   text-shadow: 1px 1px 5px black;
@@ -373,7 +360,7 @@ figcaption h2 {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr;
-  grid-gap: 15px;
+  grid-gap: 30px;
   align-items: stretch;
   justify-items: stretch;
 }
@@ -409,14 +396,14 @@ figcaption h2 {
   cursor: pointer;
 }
 
-.mediateca__media--SG1 {
+.mediateca__media--a1 {
   grid-row-start: 1;
   grid-row-end: 2;
   grid-column-start: 1;
   grid-column-end: 3;
 }
 @media (max-width: 1000px) {
-  .mediateca__media--SG1 {
+  .mediateca__media--a1 {
     grid-row-start: 1;
     grid-row-end: 2;
     grid-column-start: 1;
@@ -424,7 +411,7 @@ figcaption h2 {
   }
 }
 @media (max-width: 768px) {
-  .mediateca__media--SG1 {
+  .mediateca__media--a1 {
     grid-row-start: 1;
     grid-row-end: 2;
     grid-column-start: 1;
@@ -432,14 +419,14 @@ figcaption h2 {
   }
 }
 
-.mediateca__media--SG2 {
+.mediateca__media--a2 {
   grid-row-start: 1;
   grid-row-end: 2;
   grid-column-start: 3;
   grid-column-end: 4;
 }
 @media (max-width: 1000px) {
-  .mediateca__media--SG2 {
+  .mediateca__media--a2 {
     grid-row-start: 2;
     grid-row-end: 3;
     grid-column-start: 1;
@@ -447,7 +434,7 @@ figcaption h2 {
   }
 }
 @media (max-width: 768px) {
-  .mediateca__media--SG2 {
+  .mediateca__media--a2 {
     grid-row-start: 2;
     grid-row-end: 3;
     grid-column-start: 1;
@@ -455,14 +442,14 @@ figcaption h2 {
   }
 }
 
-.mediateca__media--SG3 {
+.mediateca__media--a3 {
   grid-row-start: 2;
   grid-row-end: 3;
   grid-column-start: 1;
   grid-column-end: 2;
 }
 @media (max-width: 1000px) {
-  .mediateca__media--SG3 {
+  .mediateca__media--a3 {
     grid-row-start: 2;
     grid-row-end: 3;
     grid-column-start: 2;
@@ -470,7 +457,7 @@ figcaption h2 {
   }
 }
 @media (max-width: 768px) {
-  .mediateca__media--SG3 {
+  .mediateca__media--a3 {
     grid-row-start: 3;
     grid-row-end: 4;
     grid-column-start: 1;
@@ -478,14 +465,14 @@ figcaption h2 {
   }
 }
 
-.mediateca__media--SG4 {
+.mediateca__media--a4 {
   grid-row-start: 2;
   grid-row-end: 3;
   grid-column-start: 2;
   grid-column-end: 4;
 }
 @media (max-width: 1000px) {
-  .mediateca__media--SG4 {
+  .mediateca__media--a4 {
     grid-row-start: 3;
     grid-row-end: 4;
     grid-column-start: 1;
@@ -493,7 +480,7 @@ figcaption h2 {
   }
 }
 @media (max-width: 768px) {
-  .mediateca__media--SG4 {
+  .mediateca__media--a4 {
     grid-row-start: 4;
     grid-row-end: 5;
     grid-column-start: 1;
@@ -501,14 +488,14 @@ figcaption h2 {
   }
 }
 
-.mediateca__media--SG5 {
+.mediateca__media--a5 {
   grid-row-start: 3;
   grid-row-end: 4;
   grid-column-start: 1;
   grid-column-end: 2;
 }
 @media (max-width: 1000px) {
-  .mediateca__media--SG5 {
+  .mediateca__media--a5 {
     grid-row-start: 4;
     grid-row-end: 5;
     grid-column-start: 1;
@@ -516,7 +503,7 @@ figcaption h2 {
   }
 }
 @media (max-width: 768px) {
-  .mediateca__media--SG5 {
+  .mediateca__media--a5 {
     grid-row-start: 5;
     grid-row-end: 6;
     grid-column-start: 1;
@@ -524,14 +511,14 @@ figcaption h2 {
   }
 }
 
-.mediateca__media--SG6 {
+.mediateca__media--a6 {
   grid-row-start: 3;
   grid-row-end: 4;
   grid-column-start: 3;
   grid-column-end: 4;
 }
 @media (max-width: 1000px) {
-  .mediateca__media--SG6 {
+  .mediateca__media--a6 {
     grid-row-start: 4;
     grid-row-end: 5;
     grid-column-start: 2;
@@ -539,7 +526,7 @@ figcaption h2 {
   }
 }
 @media (max-width: 768px) {
-  .mediateca__media--SG6 {
+  .mediateca__media--a6 {
     grid-row-start: 6;
     grid-row-end: 7;
     grid-column-start: 1;
@@ -547,14 +534,14 @@ figcaption h2 {
   }
 }
 
-.mediateca__media--SG7 {
+.mediateca__media--a7 {
   grid-row-start: 3;
   grid-row-end: 4;
   grid-column-start: 2;
   grid-column-end: 3;
 }
 @media (max-width: 1000px) {
-  .mediateca__media--SG7 {
+  .mediateca__media--a7 {
     grid-row-start: 5;
     grid-row-end: 6;
     grid-column-start: 1;
@@ -562,7 +549,7 @@ figcaption h2 {
   }
 }
 @media (max-width: 768px) {
-  .mediateca__media--SG7 {
+  .mediateca__media--a7 {
     grid-row-start: 7;
     grid-row-end: 8;
     grid-column-start: 1;
@@ -570,14 +557,14 @@ figcaption h2 {
   }
 }
 
-.mediateca__media--EC1 {
+.mediateca__media--b1 {
   grid-row-start: 1;
   grid-row-end: 2;
   grid-column-start: 1;
   grid-column-end: 2;
 }
 @media (max-width: 1000px) {
-  .mediateca__media--EC1 {
+  .mediateca__media--b1 {
     grid-row-start: 1;
     grid-row-end: 2;
     grid-column-start: 1;
@@ -585,7 +572,7 @@ figcaption h2 {
   }
 }
 @media (max-width: 768px) {
-  .mediateca__media--EC1 {
+  .mediateca__media--b1 {
     grid-row-start: 1;
     grid-row-end: 2;
     grid-column-start: 1;
@@ -593,14 +580,14 @@ figcaption h2 {
   }
 }
 
-.mediateca__media--EC2 {
+.mediateca__media--b2 {
   grid-row-start: 1;
   grid-row-end: 2;
   grid-column-start: 2;
   grid-column-end: 4;
 }
 @media (max-width: 1000px) {
-  .mediateca__media--EC2 {
+  .mediateca__media--b2 {
     grid-row-start: 2;
     grid-row-end: 3;
     grid-column-start: 1;
@@ -608,7 +595,7 @@ figcaption h2 {
   }
 }
 @media (max-width: 768px) {
-  .mediateca__media--EC2 {
+  .mediateca__media--b2 {
     grid-row-start: 2;
     grid-row-end: 3;
     grid-column-start: 1;
@@ -616,14 +603,14 @@ figcaption h2 {
   }
 }
 
-.mediateca__media--EC3 {
+.mediateca__media--b3 {
   grid-row-start: 2;
   grid-row-end: 3;
   grid-column-start: 1;
   grid-column-end: 3;
 }
 @media (max-width: 1000px) {
-  .mediateca__media--EC3 {
+  .mediateca__media--b3 {
     grid-row-start: 2;
     grid-row-end: 3;
     grid-column-start: 2;
@@ -631,7 +618,7 @@ figcaption h2 {
   }
 }
 @media (max-width: 768px) {
-  .mediateca__media--EC3 {
+  .mediateca__media--b3 {
     grid-row-start: 3;
     grid-row-end: 4;
     grid-column-start: 1;
@@ -639,14 +626,14 @@ figcaption h2 {
   }
 }
 
-.mediateca__media--EC4 {
+.mediateca__media--b4 {
   grid-row-start: 2;
   grid-row-end: 3;
   grid-column-start: 3;
   grid-column-end: 4;
 }
 @media (max-width: 1000px) {
-  .mediateca__media--EC4 {
+  .mediateca__media--b4 {
     grid-row-start: 3;
     grid-row-end: 4;
     grid-column-start: 1;
@@ -654,7 +641,7 @@ figcaption h2 {
   }
 }
 @media (max-width: 768px) {
-  .mediateca__media--EC4 {
+  .mediateca__media--b4 {
     grid-row-start: 4;
     grid-row-end: 5;
     grid-column-start: 1;
@@ -662,14 +649,14 @@ figcaption h2 {
   }
 }
 
-.mediateca__media--EC5 {
+.mediateca__media--b5 {
   grid-row-start: 3;
   grid-row-end: 4;
   grid-column-start: 1;
   grid-column-end: 2;
 }
 @media (max-width: 1000px) {
-  .mediateca__media--EC5 {
+  .mediateca__media--b5 {
     grid-row-start: 4;
     grid-row-end: 5;
     grid-column-start: 1;
@@ -677,7 +664,7 @@ figcaption h2 {
   }
 }
 @media (max-width: 768px) {
-  .mediateca__media--EC5 {
+  .mediateca__media--b5 {
     grid-row-start: 5;
     grid-row-end: 6;
     grid-column-start: 1;
@@ -685,14 +672,14 @@ figcaption h2 {
   }
 }
 
-.mediateca__media--EC6 {
+.mediateca__media--b6 {
   grid-row-start: 3;
   grid-row-end: 4;
   grid-column-start: 3;
   grid-column-end: 4;
 }
 @media (max-width: 1000px) {
-  .mediateca__media--EC6 {
+  .mediateca__media--b6 {
     grid-row-start: 4;
     grid-row-end: 5;
     grid-column-start: 2;
@@ -700,7 +687,7 @@ figcaption h2 {
   }
 }
 @media (max-width: 768px) {
-  .mediateca__media--EC6 {
+  .mediateca__media--b6 {
     grid-row-start: 6;
     grid-row-end: 7;
     grid-column-start: 1;
@@ -708,14 +695,14 @@ figcaption h2 {
   }
 }
 
-.mediateca__media--EC7 {
+.mediateca__media--b7 {
   grid-row-start: 3;
   grid-row-end: 4;
   grid-column-start: 2;
   grid-column-end: 3;
 }
 @media (max-width: 1000px) {
-  .mediateca__media--EC7 {
+  .mediateca__media--b7 {
     grid-row-start: 5;
     grid-row-end: 6;
     grid-column-start: 1;
@@ -723,7 +710,7 @@ figcaption h2 {
   }
 }
 @media (max-width: 768px) {
-  .mediateca__media--EC7 {
+  .mediateca__media--b7 {
     grid-row-start: 7;
     grid-row-end: 8;
     grid-column-start: 1;
@@ -732,6 +719,11 @@ figcaption h2 {
 }
 
 iframe {
+  width: 100%;
+}
+
+.geovisor__fichaObra--imagen {
+  max-height: 200px;
   width: 100%;
 }
 
