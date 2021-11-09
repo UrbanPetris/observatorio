@@ -161,26 +161,36 @@ img {
 .hero__image--home {
   background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.9)), url("../img/chocon4.jpg");
   background-size: cover;
+  max-height: 272px;
+  overflow: auto;
 }
 
 .hero__image--contacto {
   background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.9)), url("../img/hero-contact-us.png");
   background-size: cover;
+  max-height: 272px;
+  overflow: auto;
 }
 
 .hero__image--estadisticas {
   background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.9)), url("../img/financials_hero.jpg");
   background-size: cover;
+  max-height: 272px;
+  overflow: auto;
 }
 
 .hero__image--mediateca {
   background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.9)), url("../img/medialibrary_hero.jpg");
   background-size: cover;
+  max-height: 272px;
+  overflow: auto;
 }
 
 .hero__image--geovisor {
   background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.9)), url("../img/geovisor_hero.jpg");
   background-size: cover;
+  max-height: 272px;
+  overflow: auto;
 }
 
 .boton__redes--youtube {
@@ -346,6 +356,11 @@ table {
 }
 table ul li {
   list-style: none;
+  text-align: center;
+}
+
+th,
+td {
   text-align: center;
 }
 
