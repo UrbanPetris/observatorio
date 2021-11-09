@@ -224,7 +224,7 @@ img {
 
 #sidebarProyectos {
   width: 250px;
-  height: 300px;
+  height: 250px;
   position: fixed;
   top: 65px;
   right: -250px;
@@ -240,7 +240,7 @@ img {
 }
 @media (max-width: 768px) {
   #sidebarProyectos {
-    height: 200px;
+    height: 155px;
   }
 }
 
