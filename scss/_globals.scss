@@ -22,11 +22,12 @@ $color_redes: (
   ),
 );
 $url_heroes: (
-  home: "../img/chocon4.jpg",
-  contacto: "../img/hero-contact-us.png",
-  estadisticas: "../img/financials_hero.jpg",
-  mediateca: "../img/medialibrary_hero.jpg",
-  geovisor: "../img/geovisor_hero.jpg",
+  home: "../img/heroes/home_hero.jpg",
+  contacto: "../img/heroes/contacto_hero.png",
+  estadisticas: "../img/heroes/estadisticas_hero.jpg",
+  mediateca: "../img/heroes/media_hero.jpg",
+  geovisor: "../img/heroes/geovisor_hero.jpg",
+  error_404: "../img/heroes/error_404_hero.jpg",
 );
 
 * {
@@ -67,4 +68,8 @@ h2 {
 
 a {
   text-decoration: none;
+  &:hover,
+  &:active {
+    text-decoration: none;
+  }
 }
